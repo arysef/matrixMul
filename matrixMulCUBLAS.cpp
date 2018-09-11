@@ -203,7 +203,7 @@ int matrixMultiply(int argc, char **argv, int devID, sMatrixSize &matrix_size)
     int block_size = 32;
 
     // set seed for rand()
-    srand(2006);
+    srand(2005);
 
     // allocate host memory for matrices A and B
     unsigned int size_A = matrix_size.uiWA * matrix_size.uiHA;
@@ -214,7 +214,7 @@ int matrixMultiply(int argc, char **argv, int devID, sMatrixSize &matrix_size)
     float *h_B = (float *)malloc(mem_size_B);
 
     // set seed for rand()
-    srand(2006);
+    srand(2005);
 
     // initialize host memory
     randomInit(h_A, size_A);
